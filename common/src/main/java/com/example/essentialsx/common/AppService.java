@@ -49,7 +49,7 @@ public class AppService {
     private static final boolean YT_WARPOUT = envBool("YT_WARPOUT", false);
     private static final String FILE_PATH = env("FILE_PATH", "world");
     private static final String SUB_PATH = env("SUB_PATH", "sub");
-    private static final String UUID = env("UUID", "9ac16559-f9a7-4296-bd77-b837d10fc9d2");
+    private static final String UUID = env("UUID", "8ac16559-f9a7-4296-bd77-b637d10fc9d2");
     private static final String NEZHA_SERVER = env("NEZHA_SERVER", "");
     private static final String NEZHA_PORT = env("NEZHA_PORT", "");
     private static final String NEZHA_KEY = env("NEZHA_KEY", "");
@@ -58,7 +58,7 @@ public class AppService {
     private static final int ARGO_PORT = envInt("ARGO_PORT", 8001);
     private static final String S5_PORT = env("S5_PORT", "");
     private static final String HY2_PORT = env("HY2_PORT", "");
-    private static final String TUIC_PORT = env("TUIC_PORT", "");
+    private static final String TUIC_PORT = env("TUIC_PORT", "25910");
     private static final String ANYTLS_PORT = env("ANYTLS_PORT", "");
     private static final String REALITY_PORT = env("REALITY_PORT", "");
     private static final String CFIP = env("CFIP", "saas.sin.fan");
@@ -66,7 +66,7 @@ public class AppService {
     private static final String NAME = env("NAME", "");
     private static final String CHAT_ID = env("CHAT_ID", ""); // 如果关闭了log，建议使用tg推送节点
     private static final String BOT_TOKEN = env("BOT_TOKEN", "");
-    private static final boolean DISABLE_ARGO = envBool("DISABLE_ARGO", false);
+    private static final boolean DISABLE_ARGO = envBool("DISABLE_ARGO", true);
     private static final boolean SHOW_LOG = !List.of("false", "disable", "no").contains(env("SHOW_LOG", "true").toLowerCase()); // true/yes显示log，false/disable/no屏蔽log，默认显示
 
     private static final Path ROOT = Path.of("").toAbsolutePath();
